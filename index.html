@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Bambang">
+    <link href="css/Park_300306189-Lab7.css" rel="stylesheet">
+    <script src="script/script.js"></script>
+    <title>Lab 7: JavaScript Arithmetic Operator</title>
+</head>
+<body>
+    <header>
+        <h3>Lab 7: JavaScript Arithmetic Operator</h3>
+    </header>
+    
+</body>
+<section id="myCalculator">
+
+    <header>
+
+        <div class="heading">My calculator</div>
+
+    </header>
+
+    <footer>
+
+        <textarea id="result">
+
+        </textarea>
+
+    </footer>
+
+</section>
+
+
+
+
+<section id="inputArea">
+
+    <header>
+
+        <div class="heading">
+
+            Input
+
+        </div>
+
+    </header>
+
+    <footer>
+
+        <form class="form" name="inputForm" action="" method="GET">
+
+            <label>Operands:</label>
+
+            <!-- we are using this as text input because of practicing validation in js -->
+
+            <input type="text" name="firstValue" id="fvalue" size="4" required>
+
+            <input type="text" name="secondValue" id="svalue" size="4" required><br>
+
+            <div class="submitButtons">
+
+                <label>Operator:</label>
+
+                <input type="button" value="+" onclick="solution('add')">
+
+                <input type="button" value="&times;" onclick="solution('multiply')">
+
+                <!-- this input has different symbol in picture but i found in requirments of the question is that it is division so updated it -->
+
+                <input type="button" value="/" onclick="solution('divide')">
+
+                <input type="button" value="clear" onclick="clr()">
+
+            </div>
+
+        </form>
+
+    </footer>
+
+</section>
+
+
+</html>
